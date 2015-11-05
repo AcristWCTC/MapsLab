@@ -1,6 +1,5 @@
-package common;
+package Lab;
 
-import Lab.*;
 import java.util.Comparator;
 
 /**
@@ -9,9 +8,9 @@ import java.util.Comparator;
  * 
  * @author jlombardo
  */
-public class EmployeeByLastName implements Comparator<Employee> {
+public class EmployeeByFirstName implements Comparator<Employee> {
 
     public int compare(Employee e1, Employee e2) {
-        return e1.getFirstName().compareTo(e2.getFirstName());
+        return e1.getLastName().compareTo(e2.getLastName());
     }
 }
